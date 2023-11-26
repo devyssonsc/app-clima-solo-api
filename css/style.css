@@ -17,11 +17,7 @@ body{
     background-size: cover;
 }
 
-.hide{
-    display: none;
-}
-
-#header-container{
+#headerContainer{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,11 +28,11 @@ body{
     padding: 8px 100px;
 }
 
-#header-container #img-logo{
+#headerContainer #imgLogo{
     width: 90px;
 }
 
-#header-container #search{
+#headerContainer #search{
     background-color: rgba(40, 117, 195, .5);
     display: flex;
     flex-direction: row;
@@ -45,7 +41,7 @@ body{
     border-radius: 15px;
 }
 
-#header-container #search #input-city{
+#headerContainer #search #inputCity{
     background-color: transparent;
     padding: 10px 15px;
     border-radius: 15px;
@@ -53,7 +49,11 @@ body{
     font-size: 1.2rem;
 }
 
-#header-container #search #button-search{
+#headerContainer #search #inputCity:active{
+    background-color: transparent;
+}
+
+#headerContainer #search #btSearchCity{
     background-color: rgba(40, 117, 195, .5);
     padding: 10px 15px;
     border-radius: 15px;
@@ -85,24 +85,24 @@ body{
     justify-content: center;
 }
 
-#container #informations #main-informations{
+#container #informations #mainInformations{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#container #informations #main-informations #city{
+#container #informations #mainInformations #nameCity{
     font-size: 5em;
     font-weight: 200;
 }
 
-#container #informations #main-informations #temp{
+#container #informations #mainInformations #temp{
     font-size: 8em;
     padding-left: 15px;
 }
 
-#container #informations #main-informations #div-condition{
+#container #informations #mainInformations #divCondition{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -110,9 +110,10 @@ body{
     font-size: 2.5em;
     font-weight: 600;
     gap: 5px;
+    text-transform:capitalize;
 }
 
-#container #informations #main-informations #div-max-min-temp{
+#container #informations #mainInformations #divMaxMinTemp{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -120,7 +121,7 @@ body{
     font-size: 2em;
 }
 
-#container #informations #other-informations{
+#container #informations #otherInformations{
     margin-top: 30px;
     display: flex;
     flex-direction: row;
@@ -129,7 +130,7 @@ body{
     gap: 50px;
 }
 
-#container #informations #other-informations div{
+#container #informations #otherInformations div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,16 +142,20 @@ body{
     height: 90%;
 }
 
-#container #informations #other-informations div p:nth-child(1){
+#container #informations #otherInformations div p:nth-child(1){
     font-size: 0.7em;
 }
 
-#container #informations #other-informations div p:nth-child(2){
+#container #informations #otherInformations div p:nth-child(2){
     font-size: 5em;
     margin-top: -10px;
     margin-bottom: -10px;
 }
 
-#container #informations #other-informations div p:nth-child(3){
+#container #informations #otherInformations div p:nth-child(3){
     font-size: 1.2em;
+}
+
+.hidden{
+    display: none !important;
 }

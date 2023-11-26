@@ -6,50 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima</title>
 
-    <!-- Option 1: Include in HTML -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header id="header-container">
-        <img src="assets\img\icon-weather.png" alt="logo" id="img-logo">
+    <header id="headerContainer">
+        <img src="assets\img\icon-weather.png" alt="logo" id="imgLogo">
         <div id="search">
-            <form id="search-city">
-                <input type="text" id="input-city" required>
-                <button type="submit" id="button-search"><i class="bi bi-search"></i></button>
+            <form id="searchCity">
+                <input type="text" id="inputCity" required>
+                <button type="submit" id="btSearchCity"><i class="bi bi-search"></i></button>
             </form>
         </div>
     </header>
     
     <div id="container">
-        <h1 class="hide">Como está o clima na sua cidade?</h1>
-        <div id="informations">
-            <div id="main-informations">
-                <span id="city">Porto</span>
-                <span id="temp">15°</span>
-                <div id="div-condition">
+        <h1>Como está o clima na sua cidade?</h1>
+        <div id="informations" class="hidden">
+            <div id="mainInformations">
+                <span id="nameCity">Porto</span>
+                <p><span id="temp">15°</span>
+                <div id="divCondition">
                     <span id="condition">Nublado</span>
-                    <img src="#" alt="" id="icon-condition">
+                    <img src="#" alt="" id="iconCondition">
                 </div>
-                <div id="div-max-min-temp">
-                    <p>Máx.: <span id="max-temp">20°</span></p>
+                <div id="divMaxMinTemp">
+                    <p>Máx.: <span id="maxTemp">20°</span></p>
                     <p> | </p>
-                    <p>Mín.: <span id="min-temp">15°</span></p>
+                    <p>Mín.: <span id="minTemp">15°</span></p>
                 </div>
             </div>
-            <div id="other-informations">
-                <div id="div-wind-speed">
+            <div id="otherInformations">
+                <div id="divWindSpeed">
                     <p>Vel. do Vento</p>
-                    <p id="wind-speed">3</p>
+                    <p id="windSpeed">3</p>
                     <p>km/h</p>
                 </div>
-                <div id="div-humidity">
+                <div id="divHumidity">
                     <p>Humidade</p>
                     <p id="humidity">95</p>
                     <p>%</p>
                 </div>
-                <div id="div-visibility">
+                <div id="divVisibility">
                     <p>Visibilidade</p>
                     <p id="visibility">10</p>
                     <p>km</p>
@@ -57,6 +56,7 @@
             </div>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
