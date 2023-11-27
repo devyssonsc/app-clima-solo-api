@@ -28,11 +28,11 @@ body{
     padding: 8px 100px;
 }
 
-#headerContainer #imgLogo{
+#imgLogo{
     width: 90px;
 }
 
-#headerContainer #search{
+#search{
     background-color: rgba(40, 117, 195, .5);
     display: flex;
     flex-direction: row;
@@ -41,7 +41,7 @@ body{
     border-radius: 15px;
 }
 
-#headerContainer #search #inputCity{
+#inputCity{
     background-color: transparent;
     padding: 10px 15px;
     border-radius: 15px;
@@ -49,11 +49,11 @@ body{
     font-size: 1.2rem;
 }
 
-#headerContainer #search #inputCity:active{
+#inputCity:active{
     background-color: transparent;
 }
 
-#headerContainer #search #btSearchCity{
+#btSearchCity{
     background-color: rgba(40, 117, 195, .5);
     padding: 10px 15px;
     border-radius: 15px;
@@ -78,31 +78,31 @@ body{
     text-shadow: 5px 2px #3b3b3b;
 }
 
-#container #informations{
+#informations{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#container #informations #mainInformations{
+#mainInformations{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#container #informations #mainInformations #nameCity{
+#nameCity{
     font-size: 5em;
     font-weight: 200;
 }
 
-#container #informations #mainInformations #temp{
+#temp{
     font-size: 8em;
     padding-left: 15px;
 }
 
-#container #informations #mainInformations #divCondition{
+#divCondition{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -113,7 +113,7 @@ body{
     text-transform:capitalize;
 }
 
-#container #informations #mainInformations #divMaxMinTemp{
+#divMaxMinTemp{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -121,7 +121,7 @@ body{
     font-size: 2em;
 }
 
-#container #informations #otherInformations{
+#otherInformations{
     margin-top: 30px;
     display: flex;
     flex-direction: row;
@@ -130,7 +130,7 @@ body{
     gap: 50px;
 }
 
-#container #informations #otherInformations div{
+#otherInformations div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,17 +142,17 @@ body{
     height: 90%;
 }
 
-#container #informations #otherInformations div p:nth-child(1){
+#otherInformations div p:nth-child(1){
     font-size: 0.7em;
 }
 
-#container #informations #otherInformations div p:nth-child(2){
+#otherInformations div p:nth-child(2){
     font-size: 5em;
     margin-top: -10px;
     margin-bottom: -10px;
 }
 
-#container #informations #otherInformations div p:nth-child(3){
+#otherInformations div p:nth-child(3){
     font-size: 1.2em;
 }
 
