@@ -1,4 +1,6 @@
-const apiKey = "95efa740d2c65087ee8a19dfd32984c0";
+import config from './config.js'
+
+const apiKey = config.apiKey;
 
 const formSearchCity = document.querySelector("#searchCity")
 const nameCity = document.querySelector("#nameCity");
@@ -25,7 +27,6 @@ formSearchCity.addEventListener("submit", async (e) => {
     e.preventDefault();
     const city = formSearchCity.inputCity.value;
     const result = await SearchCity(city);
-    console.log(result);
     nameCity.innerText = result.name;
     temp.innerText = Number(result.main.temp).toFixed(0) + "°";
     condition.innerText = result.weather[0].main;
