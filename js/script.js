@@ -1,6 +1,5 @@
-import config from './config.js'
-
-const apiKey = config.apiKey;
+// const apiKey = config.apiKey;
+const apiKey = "95efa740d2c65087ee8a19dfd32984c0";
 
 const formSearchCity = document.querySelector("#searchCity")
 const nameCity = document.querySelector("#nameCity");
